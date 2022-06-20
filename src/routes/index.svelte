@@ -5,7 +5,7 @@
 import { listen } from '@tauri-apps/api/event';
 import { onMount } from 'svelte';
 onMount(() => {
-  listen('root', (event) => {
+  listen('hello', (event) => {
   console.log(`payload: ${event.payload}`);
 });
 });
