@@ -3,7 +3,11 @@
 
 <script>
 import { listen } from '@tauri-apps/api/event';
-const unlisten = listen('root', (event) => {
+import { onMount } from 'svelte';
+onMount(() => {
+  listen('root', (event) => {
   console.log(`payload: ${event.payload}`);
 });
+});
+
 </script>
