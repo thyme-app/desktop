@@ -25,7 +25,7 @@ pub fn generate_settings(app: &Arc<AppHandle>) {
     match file {
         Ok(mut f)=> {
             let toml = toml::to_string(&settings).unwrap_or_else(|_| String::from(""));
-            f.write_all(toml.as_bytes()).ok();
+            f.write_all(toml.as_bytes()).unwrap();
         },
         Err(_e) => {} // If the file already exists, we don't care
      }
