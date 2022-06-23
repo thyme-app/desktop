@@ -4,9 +4,7 @@
 	import '../app.pcss';
 	import i18n from '../i18n';
 
-	onMount(async () => {
-		i18n();
-	});
+	i18n();
 </script>
 
 {#if $isLoading}

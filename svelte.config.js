@@ -15,7 +15,6 @@ const config = {
 			pages: 'build',
 			assets: 'build',
 			fallback: 'index.html',
-			ssr: false,
 		}),
 		vite: {
 			server: {
