@@ -21,11 +21,13 @@
         "removeFile": true,
         "writeFile": true,
         "scope": [
-          "$APP",
-          "$CACHE"
+          "$APP/*"
         ]
       },
       "path": {
+        "all": true
+      },
+      "dialog": {
         "all": true
       }
     },

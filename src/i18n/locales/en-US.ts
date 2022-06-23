@@ -1,0 +1,15 @@
+export default {
+  "ok": "Ok",
+  "cancel": "Cancel",
+  "yes": "Yes",
+  "no": "Nope",
+  "splitter": "Splitters",
+  "splitter.description": "Programs that run alongside Thyme and send split events.",
+  "splitter.none": "It looks like you don't have any splitters installed",
+  "splitter.install": "Want to browse for some?",
+  "splitter.repository": "Splitter Repository",
+  "splitter.repository.description": "Trusted splitters reviewed by Thyme.",
+  "splitter.repository.none": "It looks like you don't have any splitters installed",
+  "splitter.create.0": "Don't see the game you want?",
+  "splitter.create.1": "Take a look at the docs and write your own!",
+}

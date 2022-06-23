@@ -1,5 +1,16 @@
-<script>
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import { isLoading } from 'svelte-i18n';
 	import '../app.pcss';
+	import i18n from '../i18n';
+
+	onMount(async () => {
+		i18n();
+	});
 </script>
 
-<slot />
+{#if $isLoading}
+	...
+{:else}
+	<slot />
+{/if}

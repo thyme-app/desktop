@@ -1,13 +1,5 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev" class="font-mono">kit.svelte.dev</a> to read the documentation</p>
-
-<script>
-import { listen } from '@tauri-apps/api/event';
-import { onMount } from 'svelte';
-onMount(() => {
-  listen('hello', (event) => {
-  console.log(`payload: ${event.payload}`);
-});
-});
-
+<script lang="ts">
+	import { _ } from 'svelte-i18n';
 </script>
+
+<h1>{$_("splitter")}</h1>
