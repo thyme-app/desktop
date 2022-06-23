@@ -5,11 +5,11 @@ import readSettings from '../settings';
 
 
 
-function i18n(): void {
+async function i18n() {
   addMessages('en-US', enUS);;
   init({
     fallbackLocale: 'en-US',
-    initialLocale: 'en-US',
+    initialLocale: (await readSettings()).locale,
   });
 }
 
