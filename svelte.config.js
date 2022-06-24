@@ -1,5 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
+import Icons from 'unplugin-icons/vite'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -21,9 +22,15 @@ const config = {
 			server: {
 				fs: {
 					// Allow serving files from one level up to the project root
-					allow: ['.', '../fonts'],
+					allow: ['.'],
 				}
-			}
+			},
+			plugins: [
+				Icons({
+					compiler: 'svelte',
+					autoInstall: true
+				})
+			]
 		}
 	}
 }

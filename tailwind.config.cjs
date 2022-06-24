@@ -18,7 +18,9 @@ const config = {
 			transparent: "transparent"
 		}
 	},
-	plugins: []
+	plugins: [
+		require('tailwindcss-rtl'),
+	]
 };
 
 module.exports = config;

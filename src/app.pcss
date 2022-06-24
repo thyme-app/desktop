@@ -18,3 +18,20 @@ html {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .text-start {
+    text-align: start !important;
+  }
+  .text-end {
+    text-align: end !important;
+  }
+}
+
+h1 {
+  @apply text-3xl font-bold
+}
+
+h2 {
+  @apply text-white-500
+}
