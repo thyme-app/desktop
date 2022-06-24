@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { _ } from 'svelte-i18n';
+	import _, { load } from '../i18n';
 </script>
 
-<h1>{$_("splitter")}</h1>
+<h1>{_.t('splitter')}</h1>
