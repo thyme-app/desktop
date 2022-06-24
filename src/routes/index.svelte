@@ -3,3 +3,4 @@
 </script>
 
 <h1>{_.t('splitter')}</h1>
+<h1>{_.t('splitter.description')}</h1>

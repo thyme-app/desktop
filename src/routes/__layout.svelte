@@ -1,10 +1,17 @@
 <script lang="ts">
+import { onMount } from 'svelte';
+
 	import '../app.pcss';
 	import i18n, { load } from '../i18n';
-	load();
+	
+	let loaded: Promise<void>;
+	onMount(() => {
+		loaded = load()
+	})
+
 </script>
 
-{#await load()}
+{#await loaded}
 	...
 {:then}
 	<slot />
