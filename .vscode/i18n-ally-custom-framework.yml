@@ -1,0 +1,7 @@
+languageIds:
+  - javascript
+  - typescript
+  - svelte
+
+usageMatchRegex:
+  - "[^\\w\\d]t\\(['\"`]({key})['\"`]"
