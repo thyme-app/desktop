@@ -8,6 +8,7 @@ const config = {
 		},
 		colors: {
 			bg: "#212121",
+			"bg-light": "#434343",
 			white: {
 				900: "#ffffff",
 				500: "#ADADAD"
